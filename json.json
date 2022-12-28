@@ -1,0 +1,9 @@
+{
+    "operationName": "withdraw",
+    "variables": {
+        "amount": "0.00020000",
+        "address": "1",
+        "currency": "DASH"
+    },
+    "query": "mutation withdraw($currency: CurrencyEnum!, $amount: Float!, $address: String!, $twoFactor: String) {\n  withdraw(\n    currency: $currency\n    amount: $amount\n    address: $address\n    twoFactor: $twoFactor\n  ) {\n    id\n    amount\n    __typename\n  }\n}\n"
+}
